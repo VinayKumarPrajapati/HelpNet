@@ -5,9 +5,11 @@ const helpSchema = new mongoose.Schema(
   {
     helperId: {
       type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
     },
     helpSeekerId: {
       type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
     },
     helperRating: {
       type: Number,
